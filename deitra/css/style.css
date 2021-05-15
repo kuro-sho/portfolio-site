@@ -1,0 +1,286 @@
+@charset "utf-8";
+
+body {
+  font-family: "Noto Sans JP", verdana, arial, helvetica, sans-serif;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;;
+}
+
+/* header */
+header {
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-left {
+  padding-top: 20px;
+  padding-left: 100px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header-right {
+  padding-top: 20px;
+  padding-right: 110px;
+}
+
+.header-right nav ul {
+  display: flex;
+}
+
+.header-right nav ul li {
+  margin: 0 15px;
+}
+
+.header-right nav ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.header-right nav ul li:last-child {
+  margin-right: 0;
+}
+
+.header-right nav ul li a:hover {
+  color: #ccc;
+}
+
+/* top */
+.top-wrapper img{
+  width: 1140px;
+  height: 400px;
+}
+
+.main {
+  text-align: center;
+  margin-bottom: 110px;
+}
+
+.main .second {
+  padding: 80px 0;
+}
+
+.title-first {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+
+.main .second .column {
+  display: flex;
+  justify-content: center;
+}
+
+.main .second .column img {
+  height: 320px;
+  width: 480px;
+}
+
+.main .second .column .second-text {
+  width: 441px;
+  text-align: left;
+  margin-left: 57px;
+}
+
+.main .second .column .second-text p {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.cose {
+  padding-bottom: 80px;
+}
+
+.cose .coses {
+  display: flex;
+  justify-content: center;
+}
+
+.cose .coses .step .cose_images {
+  width: 300px;
+  height: 150px;
+}
+
+.cose-mg {
+  margin: 0 50px;
+}
+
+.cose .coses .step p {
+  font-size: 16px;
+}
+
+.submit-wrapper .text, .submit {
+  display: block;
+  margin: 0 auto;
+}
+
+.submit-wrapper input.text {
+  box-sizing: border-box;
+  width: 475px;
+  height: 45px;
+  padding-left: 20px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.submit-wrapper input.submit {
+  width: 300px;
+  height: 60px;
+  color: #fff;
+  background-color: #db3355;
+  font-size: 19px;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 7px 0 0 #92011e;
+}
+
+.submit-wrapper input.submit:active {
+  box-shadow: none;
+  position: relative;
+  top: 5px;
+}
+
+footer {
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer p small{
+  display: inline-block;
+  padding: 15px 15px 50px 0;
+  font-size: 12px;
+  font-weight: 400;
+  color: #444;
+}
+
+
+/* モバイル */
+@media (max-width: 480px) {
+ body {
+   max-width: 480px;
+ }
+
+  header {
+    height: 135px;
+    display: block;
+  }
+
+  .header-left {
+    padding-top: 35px;
+    padding-left: 125px;
+    font-size: 20px;
+  }
+
+  .header-right {
+    padding-top: 30px;
+    padding-left: 70px;
+    padding-bottom: 25px;
+  }
+
+  .header-right nav ul li a {
+    font-size: 12px;
+  }
+
+  .top-wrapper img {
+    width: 480px;
+    height: 610px;
+  }
+
+  .main {
+    margin-bottom: 140px;
+  }
+
+  .main .second .column {
+    display: block;
+  }
+
+  .main .second .column img {
+    height: 320px;
+    width: 440px;
+  }
+
+  .main .second .column .second-text {
+    width: 360px;
+    text-align: left;
+    margin: 25px auto 0 auto;
+  }
+
+  .main .second .column .second-text p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .cose {
+    box-sizing: border-box;
+    padding-bottom: 80px;
+  }
+
+  .cose .coses {
+    display: block;
+  }
+
+  .cose .coses .step .cose_images {
+    width: 430px;
+    height: 215px;
+  }
+
+  .cose-mg {
+    margin: 0;
+  }
+
+  .cose .coses .step p {
+    font-size: 12px;
+    text-align: left;
+    padding-left: 25px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+  }
+
+  .submit-wrapper p {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .submit-wrapper input.text {
+    width: 430px;
+    height: 70px;
+    padding-left: 10px;
+    border: 3px solid #ccc;
+    border-radius: 50px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+
+  .submit-wrapper input.submit {
+    width: 430px;
+    height: 100px;
+    color: #fff;
+    background-color: #db3355;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 7px 0 0 #92011e;
+  }
+
+  .submit-wrapper input.submit:active {
+    background-color: tomato;
+  }
+
+  footer {
+    width: 430px;
+    margin: 0 auto;
+  }
+  
+  footer p small{
+    padding: 25px 46px 35px 0;
+    font-size: 12px;
+  }
+
+}

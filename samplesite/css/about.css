@@ -1,0 +1,306 @@
+@charset "utf-8";
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*------ end reset CSS  --------*/
+
+
+/*--------------- 共通部分 ------------------*/
+body {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  color: #666;
+}
+
+.container {
+  width: 1350px;
+  margin: 0 auto;
+}
+
+/*------------- header ---------------*/
+.header-logo {
+  text-align: center;
+  padding: 40px 0 38px 0;
+}
+
+.header-logo a img{
+  width: 400px;
+}
+
+.header-img img {
+  width: 1352px;
+  border-radius: 10px;
+}
+
+.header-nav {
+  text-align: center;
+  padding-top: 9px;
+}
+
+.header-nav nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.header-nav nav ul li a {
+  text-decoration: none;
+  padding: 15px 30px 15px 30px;
+  color: #666;
+  font-size: 18px;
+  transition: all 0.5s;
+}
+
+.header-nav nav ul li a:hover {
+  color: #d18147;
+  border-bottom: 5px solid #d18147;
+}
+
+
+/*----------------- main ------------------*/
+main a {
+  color: #666;
+  transition: all 0.5s;
+}
+
+main a:hover {
+  color: #d08047;
+}
+
+.title {
+  height: 52px;
+  line-height: 52px;
+  background-color: #d18147;
+  color: #fff;
+  border-radius: 10px;
+  padding: 0 18px;
+  font-weight: normal;
+}
+
+.about {
+  margin-top: 50px;
+}
+
+.main-text {
+  /* box-sizing: border-box; */
+  margin-top: 16px;
+  padding-left: 18px;
+}
+
+.table {
+  margin-top: 28px;
+  margin-bottom: 30px;
+}
+
+table {
+  margin-top: 20px;
+  width: 1352px;
+}
+
+table tr:first-child {
+  background-color: #eee;
+}
+
+table th,table td {
+  border: 1px solid #000;
+}
+
+table th {
+  padding: 18px 8px;
+  text-align: left;
+}
+
+table th.table-center {
+  text-align: center;
+  width: 387px;
+}
+
+table td {
+  padding-left: 10px;
+}
+
+.template {
+  margin-bottom: 56px;
+}
+
+section h3.text_2 {
+  height: 49px;
+  line-height: 49px;
+  margin: 20px 0 18px 0;
+  font-weight: normal;
+  padding: 0 19px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+section h3#ma-1 {
+  margin: 28px 0 0 0;
+}
+
+section h3.text_2:not(:first-child) {
+  margin: 28px 0 18px 0;
+}
+
+.template-spend section .setting h4 {
+  margin: 16px 0 0 18px;
+  color: #d08047;
+}
+
+.template-spend section .setting h4:not(:first-child) {
+  margin-top: 31px;
+}
+
+.template-spend section .setting p.hatching {
+  padding: 5px 10px;
+  margin: 11px 0 0 18px;
+  background-color: #e5e5e5;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.template-spend section .setting p.template-spend-text {
+  margin: 11px 0 0 18px;
+}
+
+.template-spend section .setting p.setting-text {
+  margin: 31px 0 0 18px;
+}
+
+.template-spend section .setting p.new-text {
+  margin: 16px 0 0 18px;
+}
+
+.template-spend section .setting p.setting-color {
+  color: #D79363;
+}
+
+.template-spend section span {
+  color: #D79363;
+}
+
+
+/*-------- footer ----------*/
+footer {
+  text-align: center;
+  margin-top: 67px;
+  margin-bottom: 15px;
+}
+
+footer p {
+  font-size: 13px;
+  letter-spacing: 0.2px;
+}
+
+footer p:last-child {
+  padding-top: 15px;
+  letter-spacing: -0.55px;
+}
+
+footer a {
+  color: #666;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #d08047;
+}

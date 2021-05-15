@@ -1,0 +1,224 @@
+/*--------------------------
+
+共通
+
+--------------------------*/
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.text {
+  font-family: sans-serif;
+}
+
+img {
+  max-width: 100%;
+  border: 1px solid #d8d8d8;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/*--------------------------
+
+header
+
+--------------------------*/
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 16px 0;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+}
+
+li {
+  padding: 16px;
+  text-align: center;
+}
+
+li a {
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    padding: 16px 0;
+  }
+  .header_menu {
+    width: 100%;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    width: 50%;
+    border: 1px solid #d8d8d8;
+  }
+}
+
+/*--------------------------
+
+about
+
+--------------------------*/
+.about_area {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.about_area-img {
+  width: 400px;
+}
+
+.about_area-img img{
+  border-radius: 30%;
+}
+
+.about_area-decription {
+  width: 50%;
+  padding-left: 60px;
+}
+
+.about_area-decription-icon {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 16px;
+}
+
+.about-area-decription-icon a:hover {
+  opacity: 0.6;
+}
+
+.fa-twitter {
+  color: #1da1f2;
+  font-size: 50px;
+  opacity: 0.8;
+}
+
+.fa-facebook-square:hover {
+  opacity: 0.6;
+}
+
+.fa-twitter:hover {
+  opacity: 0.6;
+}
+
+.fa-facebook-square {
+  color: #1877f2;
+  font-size: 50px;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+  .about_area {
+    justify-content: none;
+  }
+
+  .about_area-img {
+    width: 300px;
+  }
+
+  .about_area-decription {
+    width: 100%;
+    padding: 16px;
+  }
+}
+
+/*--------------------------
+
+service
+
+--------------------------*/
+#service {
+  margin-bottom: 40px;
+}
+
+#service h3 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 25px;
+  color: #535252;
+}
+
+.service-icon {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 40px;
+  color: #535252;
+}
+
+#works img {
+  margin-bottom: 40px;
+}
+
+/*--------------------------
+
+contact
+
+--------------------------*/
+.form {
+  width: 400px;
+  margin: 0 auto 40px;
+}
+
+label {
+  display: block;
+}
+
+input {
+  display: block;
+  width: 100%;
+  border: 1px solid #d8d8d8;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid #d8d8d8;
+}
+
+.form-content {
+  margin-bottom: 16px;
+}
+
+button {
+  background-color: #535252;
+  color: white;
+  width: 250px;
+  padding: 16px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .form {
+    width: 100%;
+    margin: 0 auto 40px;
+  }
+}
+
+footer {
+  text-align: center;
+}
